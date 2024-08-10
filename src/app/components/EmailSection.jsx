@@ -50,9 +50,10 @@ const EmailSection = () => {
           Let&apos;s Connect
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
-          {" "}
-          I&apos;m currently searching for new job opportunities where I can apply my skills and continue to develop as a professional. I&apos;m  always open to discussing new options and exploring how we can work together to achieve great things. Let's connect!
-        </p>
+  {" "}
+  I&apos;m currently searching for new job opportunities where I can apply my skills and continue to develop as a professional. I&apos;m always open to discussing new options and exploring how we can work together to achieve great things. Let&apos;s connect!
+</p>
+
         <div className="md:hidden socials flex flex-row gap-2">
           <Link href="github.com">
             <Image src={GithubIcon} alt="Github Icon" />
