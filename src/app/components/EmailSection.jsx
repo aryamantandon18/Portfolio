@@ -1,42 +1,44 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
+import toastr from "toastr";
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
-
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // const data = {
-    //   email: e.target.email.value,
-    //   subject: e.target.subject.value,
-    //   message: e.target.message.value,
-    // };
-    // const JSONdata = JSON.stringify(data);
-    // const endpoint = "/api/send";
+    toastr.success("Message Sent");
+    const data = {
+      email: e.target.email.value,
+      subject: e.target.subject.value,
+      message: e.target.message.value,
+    };
+    const jsonData = JSON.stringify(data);
+    console.log("Line 19 ",jsonData);
+    const endpoint = "/api/email";
 
-    // // Form the request for sending data to the server.
-    // const options = {
-    //   // The method is POST because we are sending data.
-    //   method: "POST",
-    //   // Tell the server we're sending JSON.
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   // Body of the request is the JSON data we created above.
-    //   body: JSONdata,
-    // };
+    // Form the request for sending data to the server.
+    const options = {
+      method: "POST",
+      // Tell the server we're sending JSON.
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: jsonData,
+    };
+    const response = await fetch(endpoint, options);
+    const resData = await response.json();
 
-    // const response = await fetch(endpoint, options);
-    // const resData = await response.json();
-
-    // if (response.status === 200) {
-    //   console.log("Message sent.");
-    //   setEmailSubmitted(true);
-    // }
+    if (response.status === 200) {
+      console.log("Message sent.");
+    
+      setEmailSubmitted(true);
+    }
+   
   };
 
   return (
@@ -49,11 +51,11 @@ const EmailSection = () => {
         <h5 className="text-xl font-bold text-white my-2">
           Let&apos;s Connect
         </h5>
-        <p className="text-[#ADB7BE] mb-4 max-w-md">
+        <p className="text-[#c5cbd0] mb-4 max-w-md">
   {" "}
   I&apos;m currently searching for new job opportunities where I can apply my skills and continue to develop as a professional. I&apos;m always open to discussing new options and exploring how we can work together to achieve great things. Let&apos;s connect!
 </p>
-
+        <div className="text-[#e5e8ea] text-md mb-2">tandon.aryaman1@gmail.com</div>
         <div className="md:hidden socials flex flex-row gap-2">
           <Link href="github.com">
             <Image src={GithubIcon} alt="Github Icon" />
@@ -83,7 +85,7 @@ const EmailSection = () => {
                 id="email"
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="tandon.aryaman1@google.com"
+                placeholder="tandon.aryaman1@gmail.com"
               />
             </div>
             <div className="mb-6">
