@@ -40,16 +40,15 @@ const TAB_DATA = [
       </ul>
     ),
   },
-  // {
-  //   title: "Certifications",
-  //   id: "certifications",
-  //   content: (
-  //     <ul className="list-disc pl-2">
-  //       <li>AWS Cloud Practitioner</li>
-  //       <li>Google Professional Cloud Developer</li>
-  //     </ul>
-  //   ),
-  // },
+  {
+    title: "Experience",
+    id: "experience",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>Intern Developer at HUBX</li>
+      </ul>
+    ),
+  },
 ];
 
 const AboutSection = () => {
@@ -91,13 +90,13 @@ const AboutSection = () => {
               {" "}
               Education{" "}
             </TabButton>
-            {/* <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
+            <TabButton
+              selectTab={() => handleTabChange("experience")}
+              active={tab === "experience"}
             >
               {" "}
-              Certifications{" "}
-            </TabButton> */}
+              Experience{" "}
+            </TabButton>
           </div>
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab).content}
