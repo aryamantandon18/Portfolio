@@ -17,9 +17,7 @@ const TAB_DATA = [
         <li>MongoDB</li>
         <li>SQL</li>
         <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>Docker</li>
-        <li>C/C++</li>
+        <li>HTML & CSS</li>
       </ul>
         </div>
         <div>
