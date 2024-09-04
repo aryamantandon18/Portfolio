@@ -19,25 +19,28 @@ const EmailSection = () => {
     };
     const jsonData = JSON.stringify(data);
     console.log("Line 19 ",jsonData);
-    // const endpoint = "/api/email";
+    const endpoint = "/api/email";
+    const options = {
+      method: "POST",
+      // Tell the server we're sending JSON.
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: jsonData,
+    };
+   try {
+    const response = await fetch(endpoint, options);
+    const resData = await response.json();
 
-    // // Form the request for sending data to the server.
-    // const options = {
-    //   method: "POST",
-    //   // Tell the server we're sending JSON.
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: jsonData,
-    // };
-    // const response = await fetch(endpoint, options);
-    // const resData = await response.json();
-
-    // if (response.status === 200) {
-    //   console.log("Message sent.");
+    if (response.status === 200) {
+      console.log("Message sent.");
     
-    //   setEmailSubmitted(true);
-    // }
+      setEmailSubmitted(true);
+    }
+   } catch (error) {
+    console.log("Line 41",error);
+    // console.error(error);
+   }
    
   };
 

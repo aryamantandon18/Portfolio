@@ -7,7 +7,7 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
+    title: "Ecommerce Website",
     description: "Ecommerce website include features like authentication,order placing,Razorpay payment gateway,etc. Tech Stack -- React.js, MongoDB, Nodejs, MaterialUI, TailwindCSS, JSON Web Tokens, Redux, Cloudinary .",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
@@ -16,7 +16,7 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
+    title: "Ecoyaan Website",
     description: "Complete responsive website. Tech Stack -- React.js, TailwindCSS, react-router-dom .",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
