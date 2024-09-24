@@ -43,11 +43,11 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
+    title: "My Airbnb",
+    description: "Tech Stacks : Nextjs, MongoDB, Redux, Prisma ORM (This project is currently in progress)",
+    image: "/images/Airbnb.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/aryamantandon18/Airbnb",
     previewUrl: "/",
   },
   {
