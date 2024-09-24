@@ -29,7 +29,7 @@ const projectsData = [
     description: "Tasking managing app including CRUD operations , user authentication. Tech Stack -- React.js,CSS,Nodejs,MongoDB",
     image: "/images/projects/download.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/aryamantandon18/todo_react",
     previewUrl: "https://todo-react-omega-six.vercel.app/",
   },
   {
@@ -38,7 +38,7 @@ const projectsData = [
     description: "Todo List including crud operations",
     image: "/images/projects/3.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/aryamantandon18/TodoTypeScript",
     previewUrl: "https://todo-type-script-mu.vercel.app/",
   },
   {
