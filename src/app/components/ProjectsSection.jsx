@@ -16,12 +16,12 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Ecoyaan Website",
-    description: "Complete responsive website. Tech Stack -- React.js, TailwindCSS, react-router-dom .",
-    image: "/images/projects/2.png",
+    title: "Connectly",
+    description: "Connectly is a modern communication platform designed for seamless collaboration and real-time interactions. Built with Next.js, Redux Toolkit, and MySQL, it features dynamic server creation, customizable channels, and robust user management. The project emphasizes scalability, responsiveness, and an intuitive user experience, making it ideal for both casual and professional use.",
+    image: "/images/projects/p2.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/aryamantandon18/EcoyaanAssignment",
-    previewUrl: "https://ecoyaan-assignment.vercel.app/",
+    gitUrl: "https://github.com/aryamantandon18/connectly",
+    previewUrl: "/",
   },
   {
     id: 3,
@@ -52,12 +52,12 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
+    title: "Ecoyaan Website",
+    description: "Complete responsive website. Tech Stack -- React.js, TailwindCSS, react-router-dom .",
+    image: "/images/projects/2.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/aryamantandon18/EcoyaanAssignment",
+    previewUrl: "https://ecoyaan-assignment.vercel.app/",
   },
 ];
 
