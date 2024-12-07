@@ -40,15 +40,15 @@ const TAB_DATA = [
       </ul>
     ),
   },
-  {
-    title: "Experience",
-    id: "experience",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Intern Developer at HUBX</li>
-      </ul>
-    ),
-  },
+  // {
+  //   title: "Experience",
+  //   id: "experience",
+  //   content: (
+  //     <ul className="list-disc pl-2">
+  //       <li>Intern Developer at HUBX</li>
+  //     </ul>
+  //   ),
+  // },
 ];
 
 const AboutSection = () => {
@@ -80,23 +80,20 @@ const AboutSection = () => {
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
-              {" "}
-              Skills{" "}
+              Skills
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
-              {" "}
-              Education{" "}
+              Education
             </TabButton>
-            <TabButton
+            {/* <TabButton
               selectTab={() => handleTabChange("experience")}
               active={tab === "experience"}
             >
-              {" "}
-              Experience{" "}
-            </TabButton>
+              Experience
+            </TabButton> */}
           </div>
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab).content}
