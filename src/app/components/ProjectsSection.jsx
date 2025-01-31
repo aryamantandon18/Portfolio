@@ -23,8 +23,17 @@ const projectsData = [
     gitUrl: "https://github.com/aryamantandon18/connectly",
     previewUrl: "/",
   },
-  {
+    {
     id: 3,
+    title: "AgroManager",
+    description: "Empowering farmers to track expenses, optimize resources, and grow smarter. AgroManager is your one-stop solution for managing every detail of your farm with ease. Tech Stacks : Reactjs, MaterialUi, Firebase",
+    image: "/images/agroManager.png",
+    tag: ["All", "Web"],
+    gitUrl: "",
+    previewUrl: "https://aryaman-agro-manager.vercel.app/",
+  },
+  {
+    id: 4,
     title: "Task Manager",
     description: "Tasking managing app including CRUD operations , user authentication. Tech Stack -- React.js,CSS,Nodejs,MongoDB",
     image: "/images/projects/download.png",
@@ -33,7 +42,7 @@ const projectsData = [
     previewUrl: "https://todo-react-omega-six.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Todo List",
     description: "Todo List including crud operations",
     image: "/images/projects/3.png",
@@ -41,15 +50,6 @@ const projectsData = [
     gitUrl: "https://github.com/aryamantandon18/TodoTypeScript",
     previewUrl: "https://todo-type-script-mu.vercel.app/",
   },
-  // {
-  //   id: 5,
-  //   title: "My Airbnb",
-  //   description: "Tech Stacks : Nextjs, MongoDB, Redux, Prisma ORM (This project is currently in progress)",
-  //   image: "/images/Airbnb.png",
-  //   tag: ["All", "Web"],
-  //   gitUrl: "https://github.com/aryamantandon18/Airbnb",
-  //   previewUrl: "/",
-  // },
   {
     id: 6,
     title: "Ecoyaan Website",
