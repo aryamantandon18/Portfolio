@@ -42,6 +42,15 @@ const projectsData = [
     previewUrl: "https://todo-react-omega-six.vercel.app/",
   },
   {
+    id:5,
+    title:"Tic Tac Toe Game",
+    description:"Tic Tac Toe Game using HTML, CSS & JS",
+    image:"/images/projects/7.png",
+    tag: ["Web"],
+    previewUrl:"https://aryaman-tictactoe.netlify.app/",
+    gitUrl:"/"
+  }
+  {
     id: 5,
     title: "Todo List",
     description: "Todo List including crud operations",
