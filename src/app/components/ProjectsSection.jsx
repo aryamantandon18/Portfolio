@@ -49,7 +49,7 @@ const projectsData = [
     tag: ["Web"],
     previewUrl:"https://aryaman-tictactoe.netlify.app/",
     gitUrl:"/"
-  }
+  },
   {
     id: 5,
     title: "Todo List",
